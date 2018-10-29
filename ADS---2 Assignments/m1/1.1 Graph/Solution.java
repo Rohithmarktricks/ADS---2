@@ -6,22 +6,22 @@ import java.util.Scanner;
  */
 interface Graph {
     /**
-     * Vertexs.
+     * numberOfVertices.
      *
      * @return     { number of vertices. }
      */
-    public int V();
+    public int numberOfVertices();
     /**
      * Edges.
      *
      * @return     { number of edges. }
      */
-    public int E();
+    public int numberOfEdges();
     /**
      * Adds an edge.
      *
-     * @param      v     { Vertex. }
-     * @param      w     { Vertex. }
+     * @param      v     { numberOfVertice. }
+     * @param      w     { numberOfVertice. }
      */
     public void addEdge(int v, int w);
     /**
@@ -35,8 +35,8 @@ interface Graph {
     /**
      * Determines if it has edge.
      *
-     * @param      v     { Vertex. }
-     * @param      w     { Vertex. }
+     * @param      v     { numberOfVertice. }
+     * @param      w     { numberOfVertice. }
      *
      * @return     True if has edge, False otherwise.
      */
@@ -46,43 +46,43 @@ interface Graph {
  * List of graphs.
  */
 class GraphList implements Graph {
-    private int V;
+    private int numberOfVertices;
     private int E;
     private Bag<Integer>[] adj;
     /**
      * Constructs the object.
      *
-     * @param      V1    The v 1
+     * @param      numberOfVertices1    The v 1
      */
-    GraphList(int V1) {
-        this.V = V1;
+    GraphList(int numberOfVertices1) {
+        this.numberOfVertices = numberOfVertices1;
         this.E = 0;
-        this.adj = (Bag<Integer>[]) new Bag[V];
-        for (int i = 0; i < V; i++) {
+        this.adj = (Bag<Integer>[]) new Bag[numberOfVertices];
+        for (int i = 0; i < numberOfVertices; i++) {
             adj[i] = new Bag<Integer>();
         }
     }
     /**
-     * Vertices.
+     * numberOfVerticesertices.
      *
      * @return     { Number of vertices }
      */
-    public int V() {
-        return this.V;
+    public int numberOfVertices() {
+        return this.numberOfVertices;
     }
     /**
      * Edges.
      *
      * @return     { Number of Edges. }
      */
-    public int E() {
+    public int numberOfEdges() {
         return this.E;
     }
     /**
      * Adds an edge.
      *
-     * @param      v     { Vertex 1 }
-     * @param      w     { Vertex 2 }
+     * @param      v     { numberOfVertice 1 }
+     * @param      w     { numberOfVertice 2 }
      */
     public void addEdge(int v, int w) {
         if (v == w) {
@@ -95,7 +95,7 @@ class GraphList implements Graph {
     /**
      * Adjacent vetices.
      *
-     * @param      v     { Vertex }
+     * @param      v     { numberOfVertice }
      *
      * @return     { Iterable<Integer> vertices. }
      */
@@ -138,11 +138,11 @@ class GraphList implements Graph {
      */
     public String display(String[] data) {
         String s = "";
-        s += V + " vertices, " + E + " edges" + '\n';
+        s += numberOfVertices + " vertices, " + E + " edges" + '\n';
         if (E == 0) {
             s += "No edges ";
         } else {
-            for (int v = 0; v < V; v++) {
+            for (int v = 0; v < numberOfVertices; v++) {
                 s += data[v] + ": ";
                 for (int w : adj[v]) {
                     s += data[w] + " ";
@@ -158,20 +158,20 @@ class GraphList implements Graph {
  * Class for graph matrix.
  */
 class GraphMatrix implements Graph {
-    private int V;
+    private int numberOfVertices;
     private int E;
     private int[][] matrix;
     /**
      * Constructs the object.
      *
-     * @param      V1    The v 1
+     * @param      numberOfVertices1    The v 1
      */
-    GraphMatrix(int V1) {
-        this.V = V1;
+    GraphMatrix(int numberOfVertices1) {
+        this.numberOfVertices = numberOfVertices1;
         this.E = 0;
-        this.matrix = new int[V][V];
-        for (int i = 0; i < V; i++) {
-            for (int j = 0; j < V; j++) {
+        this.matrix = new int[numberOfVertices][numberOfVertices];
+        for (int i = 0; i < numberOfVertices; i++) {
+            for (int j = 0; j < numberOfVertices; j++) {
                 matrix[i][j] = 0;
             }
         }
@@ -187,26 +187,26 @@ class GraphMatrix implements Graph {
         return null;
     }
     /**
-     * Vertex.
+     * numberOfVertice.
      *
      * @return     { vertices. }
      */
-    public int V() {
-        return this.V;
+    public int numberOfVertices() {
+        return this.numberOfVertices;
     }
     /**
      * Edges.
      *
      * @return     { Edges. }
      */
-    public int E() {
+    public int numberOfEdges() {
         return this.E;
     }
     /**
      * Adds an edge.
      *
-     * @param      v     { Vertex }
-     * @param      w     { Vertex }
+     * @param      v     { numberOfVertice }
+     * @param      w     { numberOfVertice }
      */
     public void addEdge(int v, int w) {
         if (!hasEdge(v, w) && v != w) {
@@ -233,12 +233,12 @@ class GraphMatrix implements Graph {
      */
     public String toString() {
         String s = "";
-        s += V + " vertices, " + E + " edges" + '\n';
+        s += numberOfVertices + " vertices, " + E + " edges" + '\n';
         if (E == 0) {
             s += "No edges ";
         } else {
-            for (int i = 0; i < V; i++) {
-                for (int j = 0; j < V; j++) {
+            for (int i = 0; i < numberOfVertices; i++) {
+                for (int j = 0; j < numberOfVertices; j++) {
                     s += matrix[i][j] + " ";
                 }
                 s = s.substring(0, s.length());
