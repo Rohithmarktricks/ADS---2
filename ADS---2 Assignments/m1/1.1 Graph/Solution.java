@@ -201,7 +201,7 @@ class GraphMatrix implements Graph {
      *
      * @return     { Iterable<Integer> vertices. }
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return null;
     }
     /**
