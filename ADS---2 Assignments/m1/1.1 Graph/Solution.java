@@ -10,20 +10,20 @@ interface Graph {
      *
      * @return     { number of vertices. }
      */
-    public int numberOfVertices();
+    int numberOfVertices();
     /**
      * Edges.
      *
      * @return     { number of edges. }
      */
-    public int numberOfEdges();
+    int numberOfEdges();
     /**
      * Adds an edge.
      *
      * @param      v     { numberOfVertice. }
      * @param      w     { numberOfVertice. }
      */
-    public void addEdge(int v, int w);
+    void addEdge(int v, int w);
     /**
      * Adjacent vertices.
      *
@@ -31,7 +31,7 @@ interface Graph {
      *
      * @return     { Iterable<Integer> adjacent vertices, }
      */
-    public Iterable<Integer> adj(int v);
+    Iterable<Integer> adj(int v);
     /**
      * Determines if it has edge.
      *
@@ -40,7 +40,7 @@ interface Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w);
+    boolean hasEdge(int v, int w);
 }
 /**
  * List of graphs.
