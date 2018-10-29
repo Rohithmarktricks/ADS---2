@@ -1,27 +1,7 @@
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:49:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:50:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:50:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:51:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:57:15: Parameter numberOfVertices1 should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:87:25: Parameter v should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:87:32: Parameter w should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:102:34: Parameter v should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:139:27: Parameter data should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:161:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:162:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:162:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:163:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:169:17: Parameter numberOfVertices1 should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:186:34: Parameter v should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:211:25: Parameter v should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:211:32: Parameter w should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:226:28: Parameter v should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:226:35: Parameter w should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:255:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:277: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Solution.java:204:34: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Bag.java:18: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m1/1.1 Graph/Bag.java:20: Line is longer than 80 characters (found 105). [LineLength]
