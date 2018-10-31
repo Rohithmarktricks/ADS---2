@@ -149,7 +149,7 @@ public final class Solution {
     while (scan.hasNext()) {
       int p = scan.nextInt();
       int q = scan.nextInt();
-      perc.open(p, q);
+      perc.open(p-1, q-1);
     }
     System.out.println(perc.checkPercolates());
   }

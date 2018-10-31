@@ -2,8 +2,12 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/percolation_class/2.1 CC_Percolation/Solution.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/percolation_class/2.1 CC_Percolation/Solution.java:39:14: '*' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/percolation_class/2.1 CC_Percolation/Solution.java:39:15: '*' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/percolation_class/2.1 CC_Percolation/Solution.java:152:18: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/percolation_class/2.1 CC_Percolation/Solution.java:152:19: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/percolation_class/2.1 CC_Percolation/Solution.java:152:23: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/percolation_class/2.1 CC_Percolation/Solution.java:152:24: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
 Starting audit...
