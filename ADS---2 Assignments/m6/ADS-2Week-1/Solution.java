@@ -1,29 +1,40 @@
 import java.util.Scanner;
 import java.util.Arrays;
+
+/**
+ * Class for page rank.
+ */
 class PageRank {
-	private Double[] prlist;
+	private Double[] pageRankList;
 	PageRank(Digraph g) {
-		prlist = new Double[g.V()];
+		pageRankList = new Double[g.V()];
 		for (int i = 0; i < g.V(); i++) {
-				prlist[i] = 1.0 / (g.V());
+			pageRankList[i] = 1.0 / (g.V());
 		}
 		for (int k = 0; k < 1000; k++) {
-			Double[] x = prcalculation(prlist, g);
-			if(Arrays.toString(prlist).equals(Arrays.toString(x))) {
+			Double[] calculatedListValues = prcalculation(pageRankList, g);
+			/*if (Arrays.toString(pageRankList).equals(Arrays.toString(calculatedListValues))) {
 				break;
 			} else {
-				prlist = x;
-			}
-
+				pageRankList = calculatedListValues;
+			}*/
 		}
 	}
+	/**
+	 * PageRank Calculation.
+	 *
+	 * @param      list  The list
+	 * @param      g     { Digraph graph }
+	 *
+	 * @return     { value of pagerank }
+	 */
 	public Double[] prcalculation(Double[] list, Digraph g) {
 		Double[] l = new Double[g.V()];
-		for(int i = 0; i < g.V(); i++) {
+		for (int i = 0; i < g.V(); i++) {
 			Double pr = 0.0;
-			for(int j = 0; j < g.V(); j++) {
-				for(int each: g.adj(j)) {
-					if(each == i) {
+			for (int j = 0; j < g.V(); j++) {
+				for (int each : g.adj(j)) {
+					if (each == i) {
 						pr += (double)(list[j] / g.outdegree(j));
 					}
 				}
@@ -32,13 +43,20 @@ class PageRank {
 		}
 		return l;
 	}
+	/**
+	 * Gets the Page rank.
+	 *
+	 * @param      v     { parameter_description }
+	 *
+	 * @return     The pr.
+	 */
 	public Double getPR(int v) {
-		return prlist[v];
+		return pageRankList[v];
 	}
 	public String toString() {
 		String str = "";
-		for (int i = 0; i < prlist.length; i++) {
-			str += i + " - " + prlist[i] + "\n";
+		for (int i = 0; i < pageRankList.length; i++) {
+			str += i + " - " + pageRankList[i] + "\n";
 		}
 		return str;
 	}
@@ -48,8 +66,21 @@ class PageRank {
 
 // }
 
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	Solution() {
+
+	}
+	/**
+	 * Main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		// read the first line of the input to get the number of vertices
@@ -66,9 +97,9 @@ public class Solution {
 		}
 		System.out.println(graph);
 		// Create page rank object and pass the graph object to the constructor
-		for(int i = 0; i < graph.V(); i++) {
-			if(graph.outdegree(i) == 0) {
-				for(int k = 0; k < graph.V(); k++) {
+		for (int i = 0; i < graph.V(); i++) {
+			if (graph.outdegree(i) == 0) {
+				for (int k = 0; k < graph.V(); k++) {
 					graph.addEdge(i, k);
 				}
 			}
