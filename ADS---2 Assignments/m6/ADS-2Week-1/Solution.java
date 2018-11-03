@@ -1,6 +1,7 @@
 import java.util.*;
 class PageRank {
-
+	static float intialScore = (float)100;
+	static float finlaScore;
 }
 
 class WebSearch {
@@ -11,9 +12,10 @@ class WebSearch {
 public class Solution {
 	static Map<Integer, Bag<Integer>>information;
 	static Scanner scan = new Scanner(System.in);
+	static int vertices = 0;
 	public static void main(String[] args) {
 		information = new HashMap<Integer, Bag<Integer>>();
-		int vertices = Integer.parseInt(scan.nextLine());
+		vertices = Integer.parseInt(scan.nextLine());
 		for (int limit = 0; limit < vertices; limit++) {
 			String[] num = scan.nextLine().split(" ");
 			Integer id = Integer.parseInt(num[0]);

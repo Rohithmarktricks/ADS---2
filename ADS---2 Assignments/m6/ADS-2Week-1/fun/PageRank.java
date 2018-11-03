@@ -25,23 +25,23 @@ public class PageRank {
 			page_node.setCurrentScore(INITIAL_SCORE);
 			name_to_node.put(name, page_node);
 		}
-		// int number_of_edges = Integer.valueOf(text_reader.readLine());
+		int number_of_edges = Integer.valueOf(text_reader.readLine());
 		// Create page_edges.
-		// for (int i = 0; i < number_of_edges; i++) {
-		// 	String[] nodes_in_edge = text_reader.readLine().split(" ");
-		// 	List<PageNode> nodes;
-		// 	if (!name_to_node.keySet().contains(nodes_in_edge[0])
-		// 	|| !name_to_node.keySet().contains(nodes_in_edge[1])) {
-		// 	throw new IllegalArgumentException();
-		// 	}
-		// 	if (page_edges.get(name_to_node.get(nodes_in_edge[0])) != null) {
-		// 	nodes = new ArrayList<PageNode>(page_edges.get(name_to_node.get(nodes_in_edge[0])));
-		// 	} else {
-		// 		nodes = new ArrayList<PageNode>();
-		// 	}
-		// 	nodes.add(name_to_node.get(nodes_in_edge[1]));
-		// 	page_edges.put(name_to_node.get(nodes_in_edge[0]), nodes);
-		// }
+		for (int i = 0; i < number_of_edges; i++) {
+			String[] nodes_in_edge = text_reader.readLine().split(" ");
+			List<PageNode> nodes;
+			if (!name_to_node.keySet().contains(nodes_in_edge[0])
+			|| !name_to_node.keySet().contains(nodes_in_edge[1])) {
+			throw new IllegalArgumentException();
+			}
+			if (page_edges.get(name_to_node.get(nodes_in_edge[0])) != null) {
+			nodes = new ArrayList<PageNode>(page_edges.get(name_to_node.get(nodes_in_edge[0])));
+			} else {
+				nodes = new ArrayList<PageNode>();
+			}
+			nodes.add(name_to_node.get(nodes_in_edge[1]));
+			page_edges.put(name_to_node.get(nodes_in_edge[0]), nodes);
+		}
 	}
 	// One iteration of updating the score.
 	public void updateScore() {
