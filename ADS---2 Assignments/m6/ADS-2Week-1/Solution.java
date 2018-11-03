@@ -1,7 +1,47 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
 class PageRank {
-	static float intialScore = (float)100;
-	static float finlaScore;
+	private Double[] prlist;
+	PageRank(Digraph g) {
+		prlist = new Double[g.V()];
+		for (int i = 0; i < g.V(); i++) {
+				prlist[i] = 1.0 / (g.V());
+		}
+		for (int k = 0; k < 1000; k++) {
+			Double[] x = prcalculation(prlist, g);
+			if(Arrays.toString(prlist).equals(Arrays.toString(x))) {
+				break;
+			} else {
+				prlist = x;
+			}
+
+		}
+	}
+	public Double[] prcalculation(Double[] list, Digraph g) {
+		Double[] l = new Double[g.V()];
+		for(int i = 0; i < g.V(); i++) {
+			Double pr = 0.0;
+			for(int j = 0; j < g.V(); j++) {
+				for(int each: g.adj(j)) {
+					if(each == i) {
+						pr += (double)(list[j] / g.outdegree(j));
+					}
+				}
+			}
+			l[i] = pr;
+		}
+		return l;
+	}
+	public Double getPR(int v) {
+		return prlist[v];
+	}
+	public String toString() {
+		String str = "";
+		for (int i = 0; i < prlist.length; i++) {
+			str += i + " - " + prlist[i] + "\n";
+		}
+		return str;
+	}
 }
 
 class WebSearch {
@@ -10,38 +50,34 @@ class WebSearch {
 
 
 public class Solution {
-	static Map<Integer, Bag<Integer>>information;
-	static Scanner scan = new Scanner(System.in);
-	static int vertices = 0;
 	public static void main(String[] args) {
-		information = new HashMap<Integer, Bag<Integer>>();
-		vertices = Integer.parseInt(scan.nextLine());
-		for (int limit = 0; limit < vertices; limit++) {
-			String[] num = scan.nextLine().split(" ");
-			Integer id = Integer.parseInt(num[0]);
-			information.putIfAbsent(id, new Bag<Integer>());
-			int len = 1;
-			while (len >= num.length) {
-				information.get(id).add(Integer.parseInt(num[len]));
-				len++;
-
-			}
-		}
-		// Digraph graph = new Digraph(vertices);
+		Scanner sc = new Scanner(System.in);
 		// read the first line of the input to get the number of vertices
-		// for (int i = 0; i < vertices; i++) {
-		// 	String[] elements = scan.nextLine().split(" ");}
+		int n = Integer.parseInt(sc.nextLine());
 		// iterate count of vertices times
 		// to read the adjacency list from std input
 		// and build the graph
-
-
+		Digraph graph = new Digraph(n);
+		for (int i = 0; i < n; i++) {
+			String[] tokens = sc.nextLine().split(" ");
+			for (int k = 1 ; k < tokens.length ; k++) {
+				graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[k]));
+			}
+		}
+		System.out.println(graph);
 		// Create page rank object and pass the graph object to the constructor
-
+		for(int i = 0; i < graph.V(); i++) {
+			if(graph.outdegree(i) == 0) {
+				for(int k = 0; k < graph.V(); k++) {
+					graph.addEdge(i, k);
+				}
+			}
+		}
+		PageRank pr = new PageRank(graph);
 		// print the page rank object
-
+		System.out.println(pr);
 		// This part is only for the final test case
-
+		//
 		// File path to the web content
 		String file = "WebContent.txt";
 
