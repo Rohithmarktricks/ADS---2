@@ -13,11 +13,12 @@ class PageRank {
 		}
 		for (int k = 0; k < 1000; k++) {
 			Double[] calculatedListValues = prcalculation(pageRankList, g);
-			/*if (Arrays.toString(pageRankList).equals(Arrays.toString(calculatedListValues))) {
+			if (Arrays.toString(pageRankList).equals(Arrays.toString(calculatedListValues))) {
+				pageRankList = calculatedListValues;
 				break;
 			} else {
 				pageRankList = calculatedListValues;
-			}*/
+			}
 		}
 	}
 	/**
