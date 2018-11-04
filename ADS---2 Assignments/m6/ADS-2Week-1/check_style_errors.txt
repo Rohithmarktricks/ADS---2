@@ -325,8 +325,8 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:94:39: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:94:59: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:95: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:99: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:116: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:100: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:117: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
 Checkstyle ends with 22 errors.
 Starting audit...
@@ -466,6 +466,3 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Queue.java:156: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 33 errors.
-Files to process must be specified, found 0.
-Files to process must be specified, found 0.
-Files to process must be specified, found 0.

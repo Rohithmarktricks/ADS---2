@@ -93,6 +93,7 @@ public class Solution {
 			String[] tokens = sc.nextLine().split(" ");
 			for (int k = 1 ; k < tokens.length ; k++) {
 				graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[k]));
+				// System.out.println(graph);
 			}
 		}
 		System.out.println(graph);
