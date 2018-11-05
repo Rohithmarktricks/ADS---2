@@ -1,11 +1,13 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.*;
+// import java.io.*;
 
 /**
  * Class for page rank.
  */
 class PageRank {
-	private Double[] pageRankList;
+	private static Double[] pageRankList;
 	PageRank(Digraph g) {
 		pageRankList = new Double[g.V()];
 		for (int i = 0; i < g.V(); i++) {
@@ -51,7 +53,7 @@ class PageRank {
 	 *
 	 * @return     The pr.
 	 */
-	public Double getPR(int v) {
+	public static Double getPR(int v) {
 		return pageRankList[v];
 	}
 	public String toString() {
@@ -64,6 +66,36 @@ class PageRank {
 }
 
 class WebSearch {
+	Hashtable<String, Bag<Integer>> wordMaxID;
+	public WebSearch(PageRank pr, String fileName) {
+		In inp = new In(fileName);
+		wordMaxID = new Hashtable<String, Bag<Integer>>();
+
+		for (String webPage : inp.readAllLines()) {
+			String[] entries = webPage.split(":");
+			Integer webID = Integer.parseInt(entries[0]);
+			String[] webPageElements = entries[1].split(" ");
+
+			for (String str : webPageElements) {
+				wordMaxID.putIfAbsent(str, new Bag<Integer>());
+				wordMaxID.get(str).add(webID);
+			}
+		}
+	}
+	public int iAmFeelingLucky(String query) {
+		if (wordMaxID.containsKey(query)) {
+			Bag<Integer> sample = wordMaxID.get(query);
+			double maxx = 0.0;
+			int index = 0;
+			for (Integer i : sample) {
+				if (maxx < PageRank.getPR(i)) {
+					index = i;
+				}
+			}
+			return index;
+		}
+		return -1;
+	}
 
 }
 
@@ -113,6 +145,11 @@ public class Solution {
 		//
 		// File path to the web content
 		String file = "WebContent.txt";
+		WebSearch wbs = new WebSearch(pr, file);
+		while (sc.hasNext()) {
+			String[] queriesList = sc.nextLine().split("=");
+			System.out.println(wbs.iAmFeelingLucky(queriesList[1]));
+		}
 
 		// instantiate web search object
 		// and pass the page rank object and the file path to the constructor

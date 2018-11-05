@@ -305,29 +305,39 @@ Starting audit...
 Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:8:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:9:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:9:18: Parameter g should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:14:37: '1000' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:15: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:16: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:32:39: Parameter list should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:32:54: Parameter g should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:39: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:39:63: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:54:29: Parameter v should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:57:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:73:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:85:33: Parameter args should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:87: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:95:39: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:95:59: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:96: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:108: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:118: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:3: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:10:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:11:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:11:18: Parameter g should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:16:37: '1000' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:17: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:18: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:34:39: Parameter list should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:34:54: Parameter g should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:41: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:41:63: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:56:36: Parameter v should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:59:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:68: Missing a Javadoc comment. [JavadocType]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:69:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:69:41: Variable 'wordMaxID' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:70:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:70:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:70:26: Parameter pr should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:70:39: Parameter fileName should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:85:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:85:36: Parameter query should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:105:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:117:33: Parameter args should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:119: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:127:39: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:127:59: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:128: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:140: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:155: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 31 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Digraph.java:7: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Digraph.java:14: Line has trailing spaces. [RegexpSingleline]
@@ -399,9 +409,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 67 errors.
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:8: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:35: Line has trailing spaces. [RegexpSingleline]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:36: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:39: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:44: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:46: Line is longer than 80 characters (found 106). [LineLength]
@@ -413,7 +420,6 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:96:21: Parameter item should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:106: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:108: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:111: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:115: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:116:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:118:9: Missing a Javadoc comment. [JavadocMethod]
@@ -426,9 +432,8 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:123:35: '{' at column 35 should have line break after. [LeftCurly]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:125:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:126: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Bag.java:128: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 23 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Queue.java:9: Line has trailing spaces. [RegexpSingleline]
