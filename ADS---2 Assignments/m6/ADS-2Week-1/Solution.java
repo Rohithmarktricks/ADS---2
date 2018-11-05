@@ -13,7 +13,7 @@ class PageRank {
 		for (int i = 0; i < g.V(); i++) {
 			pageRankList[i] = 1.0 / (g.V());
 		}
-		for (int k = 0; k < 1000; k++) {
+		for (int k = 0; k < 104; k++) {
 			Double[] calculatedListValues = prcalculation(pageRankList, g);
 			/*			if (Arrays.toString(pageRankList).equals(Arrays.toString(calculatedListValues))) {
 							pageRankList = calculatedListValues;
