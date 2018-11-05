@@ -305,6 +305,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:3: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:10:9: Missing a Javadoc comment. [JavadocVariable]
@@ -337,7 +338,7 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:140: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:155: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 31 errors.
+Checkstyle ends with 32 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Digraph.java:7: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Digraph.java:14: Line has trailing spaces. [RegexpSingleline]
