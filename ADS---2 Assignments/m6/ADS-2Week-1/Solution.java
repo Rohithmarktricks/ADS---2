@@ -17,7 +17,7 @@ class PageRank {
 			Double[] calculatedListValues = prcalculation(pageRankList, g);
 			if (Arrays.toString(pageRankList).equals(Arrays.toString(calculatedListValues))) {
 				pageRankList = calculatedListValues;
-				break;
+				// break;
 			} else {
 				pageRankList = calculatedListValues;
 			}
