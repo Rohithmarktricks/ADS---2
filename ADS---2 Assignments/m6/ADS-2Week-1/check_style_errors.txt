@@ -313,7 +313,8 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:11:18: Parameter g should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:16:37: '1000' is a magic number. [MagicNumber]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:17: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:18: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:18: Line is longer than 80 characters (found 130). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:19: Line is longer than 80 characters (found 92). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:34:39: Parameter list should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:34:54: Parameter g should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:41: Line is longer than 80 characters (found 89). [LineLength]
@@ -335,10 +336,10 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:127:39: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:127:59: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:128: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:140: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:155: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:142: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:157: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Digraph.java:7: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Digraph.java:14: Line has trailing spaces. [RegexpSingleline]

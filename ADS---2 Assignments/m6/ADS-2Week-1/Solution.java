@@ -15,11 +15,11 @@ class PageRank {
 		}
 		for (int k = 0; k < 1000; k++) {
 			Double[] calculatedListValues = prcalculation(pageRankList, g);
-/*			if (Arrays.toString(pageRankList).equals(Arrays.toString(calculatedListValues))) {
-				pageRankList = calculatedListValues;
-				break;
-			} else {*/
-				pageRankList = calculatedListValues;
+			/*			if (Arrays.toString(pageRankList).equals(Arrays.toString(calculatedListValues))) {
+							pageRankList = calculatedListValues;
+							break;
+						} else {*/
+			pageRankList = calculatedListValues;
 			//}
 		}
 	}
@@ -132,7 +132,9 @@ public class Solution {
 		for (int i = 0; i < graph.V(); i++) {
 			if (graph.outdegree(i) == 0) {
 				for (int k = 0; k < graph.V(); k++) {
-					graph.addEdge(i, k);
+					if (i != k) {
+						graph.addEdge(i, k);
+					}
 				}
 			}
 		}
