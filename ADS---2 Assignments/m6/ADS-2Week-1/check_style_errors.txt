@@ -352,17 +352,9 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:165:59: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:166: Line is longer than 80 characters (found 104). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:180: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:183:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:183:33: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:183:34: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:183:41: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:184:45: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:184:46: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:184:49: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:184:50: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Solution.java:198: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 56 errors.
+Checkstyle ends with 48 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Digraph.java:7: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m6/ADS-2Week-1/Digraph.java:14: Line has trailing spaces. [RegexpSingleline]

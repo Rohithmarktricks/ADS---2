@@ -180,8 +180,8 @@ public class Solution {
 		// Create page rank object and pass the graph object to the constructor
 		PageRank pr = new PageRank(graph);
 		// print the page rank object
-		for(int i = 0; i<n; i++){
-			System.out.println(i+"-"+pr.getPR(i));
+		for (int i = 0; i < n; i++) {
+			System.out.println(i + " - " + pr.getPR(i));
 		}
 		// System.out.println(pr);
 		// This part is only for the final test case
