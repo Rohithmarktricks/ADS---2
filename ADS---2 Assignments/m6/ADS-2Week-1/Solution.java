@@ -8,12 +8,18 @@ import java.util.*;
  */
 class PageRank {
 	private static Double[] pageRankList;
+	static Digraph g;
+	static double value;
+	static Digraph rev;
 	PageRank(Digraph g) {
+		rev = g.reverse();
+		value = g.V();
+		this.g = g;
 		pageRankList = new Double[g.V()];
 		for (int i = 0; i < g.V(); i++) {
 			pageRankList[i] = 1.0 / (g.V());
 		}
-		for (int k = 0; k < 104; k++) {
+		for (int k = 0; k < 1000; k++) {
 			Double[] calculatedListValues = prcalculation(pageRankList, g);
 			/*			if (Arrays.toString(pageRankList).equals(Arrays.toString(calculatedListValues))) {
 							pageRankList = calculatedListValues;
@@ -22,6 +28,11 @@ class PageRank {
 			pageRankList = calculatedListValues;
 			//}
 		}
+
+
+
+
+
 	}
 	/**
 	 * PageRank Calculation.
@@ -53,8 +64,35 @@ class PageRank {
 	 *
 	 * @return     The pr.
 	 */
-	public static Double getPR(int v) {
-		return pageRankList[v];
+	public static Double getPR(int x) {
+		double prr = 1.0 / value;
+		return helper(prr, x);
+
+		// return pageRankList[v];
+	}
+	public static double helper(double pr, int x) {
+		double[] prs = new double[g.V()];
+		for (int i = 0; i < prs.length; i++) {
+			prs[i] = pr;
+		}
+		double[] new_prs = new double[g.V()];
+		for (int i = 0; i < prs.length; i++) {
+			new_prs[i] = prs[i];
+		}
+		for (int iter = 0; iter < 1000; iter++) {
+			for (int i = 0; i < prs.length; i++) {
+				prs[i] = new_prs[i];
+			}
+			for (int j = 0; j < g.V(); j++) {
+				Iterable<Integer> it = rev.adj(j);
+				double cal = 0.0;
+				for (Integer in : it) {
+					cal += prs[in] / g.outdegree(in);
+				}
+				new_prs[j] = cal;
+			}
+		}
+		return new_prs[x];
 	}
 	public String toString() {
 		String str = "";
@@ -142,7 +180,10 @@ public class Solution {
 		// Create page rank object and pass the graph object to the constructor
 		PageRank pr = new PageRank(graph);
 		// print the page rank object
-		System.out.println(pr);
+		for(int i = 0; i<n; i++){
+			System.out.println(i+"-"+pr.getPR(i));
+		}
+		// System.out.println(pr);
 		// This part is only for the final test case
 		//
 		// File path to the web content
