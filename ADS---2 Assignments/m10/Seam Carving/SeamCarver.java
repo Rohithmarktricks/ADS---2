@@ -24,10 +24,10 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
-		if (x < 0 || x >= pic.width()
-		        || y < 0 || y >= pic.height()) {
-			throw new IndexOutOfBoundsException("Invalid position.");
-		}
+		// if (x < 0 || x >= pic.width()
+		//         || y < 0 || y >= pic.height()) {
+		// 	throw new IndexOutOfBoundsException("Invalid position.");
+		// }
 
 //		it is located on the boundary
 		if (x == 0 || x == pic.width() - 1
