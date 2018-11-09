@@ -293,12 +293,12 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:148: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:171: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:177: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:199:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:199:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:199:42: Parameter seam should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:219:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:219:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:219:40: Parameter seam should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:200:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:200:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:200:42: Parameter seam should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:220:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:220:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m10/Seam Carving/SeamCarver.java:220:40: Parameter seam should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
