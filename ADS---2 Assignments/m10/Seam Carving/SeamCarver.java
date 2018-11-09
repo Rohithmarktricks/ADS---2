@@ -205,6 +205,7 @@ public class SeamCarver {
 				if (j < seam[i]) {
 					newPic.set(i, j, pic.get(i, j));
 				} else {
+					h--;
 					newPic.set(i, j, pic.get(i, j + 1));
 				}
 			}
@@ -225,6 +226,7 @@ public class SeamCarver {
 				if (i < seam[j]) {
 					newPic.set(i, j, pic.get(i, j));
 				} else {
+					w--;
 					newPic.set(i, j, pic.get(i + 1, j));
 				}
 			}
