@@ -184,8 +184,7 @@ public class SeamCarver {
 		int ptr = h - 1;
 //		exclude source vertex, whose index is 0
 		while (edgeTo[current] > 0) {
-			result[ptr] = (edgeTo[current] - 1);
-			// % w;
+			result[ptr] = (edgeTo[current] - 1) % w;
 			ptr--;
 			current = edgeTo[current];
 //			should not happen
