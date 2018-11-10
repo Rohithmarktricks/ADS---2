@@ -154,9 +154,8 @@ Checkstyle ends with 99 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/EdgeWeightedGraph.java:105:5: Class 'EdgeWeightedGraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EdgeWeightedGraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/EdgeWeightedGraph.java:105:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/EdgeWeightedGraph.java:112: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
