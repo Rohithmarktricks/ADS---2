@@ -14,7 +14,7 @@ public class Solution {
 			String[] testcases = scan.nextLine().split(" ");
 			int source = Integer.parseInt(testcases[0]);
 			int destination = Integer.parseInt(testcases[1]);
-			int distance = Integer.parseInt(testcases[3]);
+			int distance = Integer.parseInt(testcases[2]);
 			e = new Edge(source, destination, distance);
 			eg.addEdge(e);
 			cities--;
