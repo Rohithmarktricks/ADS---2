@@ -30,9 +30,9 @@ public class Solution {
 				for (Edge edge : eg.adj[v]) {
 					System.out.print(edge + "  ");
 				}
-				System.out.print("\n");
+				// System.out.print("\n");
+				System.out.println();
 			}
-			System.out.println();
 			break;
 
 		case "DirectedPaths":
