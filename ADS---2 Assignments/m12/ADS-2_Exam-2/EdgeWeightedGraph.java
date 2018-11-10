@@ -13,7 +13,7 @@ public class EdgeWeightedGraph {
     /**
      * {Bag array of type Edge}.
      */
-    private Bag<Edge>[] adj;
+    public Bag<Edge>[] adj;
 
     /**
      * Initializes an empty edge-weighted graph with {@code v}

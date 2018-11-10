@@ -22,8 +22,12 @@ public class Solution {
 		String caseToGo = scan.nextLine();
 		switch (caseToGo) {
 		case "Graph":
-			for (Edge ed : eg.edges()) {
-				System.out.println(ed);
+			int ver = eg.vertices();
+			for (int v = 0; v < ver; v++) {
+				for (Edge edge : eg.adj[v]) {
+					System.out.print(v + ": " + edge + " " + edge.weight() + "  ");
+				}
+				System.out.print("\n");
 			}
 			break;
 
@@ -38,7 +42,7 @@ public class Solution {
 			int destination = Integer.parseInt(pair[1]);
 			if (l.distTo(destination) != 00.00) {
 				System.out.printf("%.1f\n", l.distTo(destination));
-			}else {
+			} else {
 				System.out.println("No Path Found.");
 			}
 

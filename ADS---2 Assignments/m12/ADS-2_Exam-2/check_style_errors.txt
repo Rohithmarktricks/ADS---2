@@ -57,14 +57,13 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:31: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:40: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:41:26: 'else' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:41:26: '}' is not followed by whitespace. [WhitespaceAround]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:50: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:51: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:28: Line is longer than 80 characters (found 103). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:35: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:44: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:54: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:55: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/DijkstraSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/DijkstraSP.java:1: Missing a Javadoc comment. [JavadocType]
@@ -263,7 +262,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 41 errors.
 Starting audit...
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/EdgeWeightedGraph.java:16:24: Variable 'adj' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
