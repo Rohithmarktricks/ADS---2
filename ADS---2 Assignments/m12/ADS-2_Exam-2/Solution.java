@@ -32,6 +32,7 @@ public class Solution {
 				}
 				System.out.print("\n");
 			}
+			System.out.println();
 			break;
 
 		case "DirectedPaths":
@@ -59,6 +60,13 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] fun = scan.nextLine().split(" ");
+			int so = Integer.parseInt(fun[0]);
+			int via = Integer.parseInt(fun[1]);
+			int destiny = Integer.parseInt(fun[2]);
+			// for (Edge edge : eg.adj()) {
+
+			// }
 			break;
 
 		default:
