@@ -90,7 +90,7 @@ public final class Solution {
                     int temp = edge2.either();
                     str += edge2.other(temp) + " ";
                 }
-                str += "/";
+                // str += "/";
                 System.out.println(str);
             }
             break;
