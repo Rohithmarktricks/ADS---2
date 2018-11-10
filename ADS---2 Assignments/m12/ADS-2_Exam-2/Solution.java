@@ -94,6 +94,7 @@ public final class Solution {
                     } else {
                         str = str + temp + " ";
                     }
+                    comparison = temp;
                 }
                 System.out.println(str);
             }
