@@ -7,6 +7,7 @@ public class Solution {
 		// Take the Graph input here...
 		Scanner scan = new Scanner(System.in);
 		int cities = Integer.parseInt(scan.nextLine());
+		int reference = cities;
 		int routes = Integer.parseInt(scan.nextLine());
 		EdgeWeightedGraph eg = new EdgeWeightedGraph(cities);
 		Edge e;
@@ -23,7 +24,7 @@ public class Solution {
 		switch (caseToGo) {
 		case "Graph":
 			int ver = eg.vertices();
-			System.out.println(cities + " vertices " + routes + " edges");
+			System.out.println(reference + " vertices " + routes + " edges");
 			for (int v = 0; v < ver; v++) {
 				System.out.print(v + ": ");
 				for (Edge edge : eg.adj[v]) {
