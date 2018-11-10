@@ -23,6 +23,7 @@ public class Solution {
 		switch (caseToGo) {
 		case "Graph":
 			int ver = eg.vertices();
+			System.out.println(cities + " vertices " + routes + " edges");
 			for (int v = 0; v < ver; v++) {
 				System.out.print(v + ": ");
 				for (Edge edge : eg.adj[v]) {
