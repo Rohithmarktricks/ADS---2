@@ -66,14 +66,14 @@ public final class Solution {
             // If the path exists print the distance between them.
             // Other wise print "No Path Found."
             String[] place = scan.nextLine().split(" ");
-            Shortestpath pathToplace1 =
+            Shortestpath place1 =
                 new Shortestpath(eg, Integer.parseInt(place[0]));
-            Shortestpath pathToplace2 =
+            Shortestpath viaPlace =
                 new Shortestpath(eg, Integer.parseInt(place[1]));
             double distancePlace1 =
-                pathToplace1.distTo(Integer.parseInt(place[1]));
+                place1.distTo(Integer.parseInt(place[1]));
             double distancePlace2 =
-                pathToplace2.distTo(Integer.parseInt(place[2]));
+                viaPlace.distTo(Integer.parseInt(place[2]));
             String str = place[0] + " ";
             if (distancePlace1 == Double.POSITIVE_INFINITY
                     || distancePlace2 == Double.POSITIVE_INFINITY) {
@@ -82,15 +82,19 @@ public final class Solution {
                 System.out.println(distancePlace1
                                    + distancePlace2);
                 for (Edge edge1
-                        : pathToplace1.pathTo(Integer.parseInt(place[1]))) {
+                        : place1.pathTo(Integer.parseInt(place[1]))) {
                     str += edge1.either() + " ";
                 }
+                int comparison = Integer.parseInt(place[1]);
                 for (Edge edge2
-                        : pathToplace2.pathTo(Integer.parseInt(place[2]))) {
+                        : viaPlace.pathTo(Integer.parseInt(place[2]))) {
                     int temp = edge2.either();
-                    str += edge2.other(temp) + " ";
+                    if (comparison == temp) {
+                        str += edge2.other(temp) + " ";
+                    } else {
+                        str = str + temp + " ";
+                    }
                 }
-                // str += "/";
                 System.out.println(str);
             }
             break;
