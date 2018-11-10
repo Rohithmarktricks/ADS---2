@@ -24,8 +24,9 @@ public class Solution {
 		case "Graph":
 			int ver = eg.vertices();
 			for (int v = 0; v < ver; v++) {
+				System.out.print(v + ": ");
 				for (Edge edge : eg.adj[v]) {
-					System.out.print(v + ": " + edge + " " + edge.weight() + "  ");
+					System.out.print(edge + " " + edge.weight() + "  ");
 				}
 				System.out.print("\n");
 			}

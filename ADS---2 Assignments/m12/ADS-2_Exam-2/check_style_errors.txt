@@ -57,11 +57,11 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:28: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:35: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:44: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:54: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:55: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:29: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:36: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:45: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:55: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:56: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
 Checkstyle ends with 11 errors.
 Starting audit...
