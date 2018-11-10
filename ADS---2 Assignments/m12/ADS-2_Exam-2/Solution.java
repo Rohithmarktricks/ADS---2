@@ -81,12 +81,12 @@ public final class Solution {
             } else {
                 System.out.println(distancePlace1
                                    + distancePlace2);
-                for (Edge edge1 :
-                        pathToplace1.pathTo(Integer.parseInt(place[1]))) {
+                for (Edge edge1
+                        : pathToplace1.pathTo(Integer.parseInt(place[1]))) {
                     str += edge1.either() + " ";
                 }
-                for (Edge edge2 :
-                        pathToplace2.pathTo(Integer.parseInt(place[2]))) {
+                for (Edge edge2
+                        : pathToplace2.pathTo(Integer.parseInt(place[2]))) {
                     int temp = edge2.either();
                     str += edge2.other(temp) + " ";
                 }
