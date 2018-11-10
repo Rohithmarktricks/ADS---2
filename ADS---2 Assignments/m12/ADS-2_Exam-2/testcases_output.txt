@@ -43,12 +43,12 @@ Your Output:
 Infinity
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 370.0
 
 Your Output: 
-370.000000
+370.0
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
