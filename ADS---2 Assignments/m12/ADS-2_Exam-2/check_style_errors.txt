@@ -57,7 +57,7 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:27: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:27: Line is longer than 80 characters (found 92). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:39: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:48: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/Solution.java:58: Line is longer than 80 characters (found 87). [LineLength]
@@ -263,8 +263,10 @@ Audit done.
 Checkstyle ends with 41 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/EdgeWeightedGraph.java:16:24: Variable 'adj' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/EdgeWeightedGraph.java:105:5: Class 'EdgeWeightedGraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'EdgeWeightedGraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m12/ADS-2_Exam-2/EdgeWeightedGraph.java:105:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...

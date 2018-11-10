@@ -23,16 +23,16 @@ public class Solution {
 		String caseToGo = scan.nextLine();
 		switch (caseToGo) {
 		case "Graph":
-			int ver = eg.vertices();
-			System.out.println(reference + " vertices " + routes + " edges");
-			for (int v = 0; v < ver; v++) {
-				System.out.print(v + ": ");
-				for (Edge edge : eg.adj[v]) {
-					System.out.print(edge + "  ");
-				}
-				// System.out.print("\n");
-				System.out.println();
-			}
+			// int ver = eg.vertices();
+			// System.out.println(reference + " vertices " + routes + " edges");
+			// for (int v = 0; v < ver; v++) {
+			// 	System.out.print(v + ": ");
+			// 	for (Edge edge : eg.adj(v)) {
+			// 		System.out.print(edge + "  ");
+			// 	}
+			// 	System.out.println();
+			// }
+			System.out.println(eg);
 			break;
 
 		case "DirectedPaths":
@@ -64,9 +64,9 @@ public class Solution {
 			int so = Integer.parseInt(fun[0]);
 			int via = Integer.parseInt(fun[1]);
 			int destiny = Integer.parseInt(fun[2]);
-			// for (Edge edge : eg.adj()) {
-
-			// }
+			// for (Edge edge : eg.adj(so)) {
+			// 	if ()
+			// 	}
 			break;
 
 		default:
