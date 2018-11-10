@@ -1,4 +1,4 @@
-public class SP {
+public class Shortestpath {
     private double[] distTo;          // distTo[v] = distance  of shortest s->v path
     private Edge[] edgeTo;            // edgeTo[v] = last edge on shortest s->v path
     private IndexMinPQ<Double> pq;    // priority queue of vertices
@@ -12,23 +12,23 @@ public class SP {
      * @throws IllegalArgumentException if an edge weight is negative
      * @throws IllegalArgumentException unless {@code 0 <= s < V}
      */
-    public SP(EdgeWeightedGraph G, int s) {
+    public Shortestpath(EdgeWeightedGraph G, int s) {
         for (Edge e : G.edges()) {
             if (e.weight() < 0)
                 throw new IllegalArgumentException("edge " + e + " has negative weight");
         }
 
-        distTo = new double[G.V()];
-        edgeTo = new Edge[G.V()];
+        distTo = new double[G.vertices()];
+        edgeTo = new Edge[G.vertices()];
 
         validateVertex(s);
 
-        for (int v = 0; v < G.V(); v++)
+        for (int v = 0; v < G.vertices(); v++)
             distTo[v] = Double.POSITIVE_INFINITY;
         distTo[s] = 0.0;
 
         // relax vertices in order of distance from s
-        pq = new IndexMinPQ<Double>(G.V());
+        pq = new IndexMinPQ<Double>(G.vertices());
         pq.insert(s, distTo[s]);
         while (!pq.isEmpty()) {
             int v = pq.delMin();
@@ -118,7 +118,7 @@ public class SP {
             System.err.println("distTo[s] and edgeTo[s] inconsistent");
             return false;
         }
-        for (int v = 0; v < G.V(); v++) {
+        for (int v = 0; v < G.vertices(); v++) {
             if (v == s) continue;
             if (edgeTo[v] == null && distTo[v] != Double.POSITIVE_INFINITY) {
                 System.err.println("distTo[] and edgeTo[] inconsistent");
@@ -127,7 +127,7 @@ public class SP {
         }
 
         // check that all edges e = v-w satisfy distTo[w] <= distTo[v] + e.weight()
-        for (int v = 0; v < G.V(); v++) {
+        for (int v = 0; v < G.vertices(); v++) {
             for (Edge e : G.adj(v)) {
                 int w = e.other(v);
                 if (distTo[v] + e.weight() < distTo[w]) {
@@ -138,7 +138,7 @@ public class SP {
         }
 
         // check that all edges e = v-w on SPT satisfy distTo[w] == distTo[v] + e.weight()
-        for (int w = 0; w < G.V(); w++) {
+        for (int w = 0; w < G.vertices(); w++) {
             if (edgeTo[w] == null) continue;
             Edge e = edgeTo[w];
             if (w != e.either() && w != e.other(e.either())) return false;
@@ -156,35 +156,6 @@ public class SP {
         int V = distTo.length;
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
-    }
-
-    /**
-     * Unit tests the {@code DijkstraUndirectedSP} data type.
-     *
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args) {
-        In in = new In(args[0]);
-        EdgeWeightedGraph G = new EdgeWeightedGraph(in);
-        int s = Integer.parseInt(args[1]);
-
-        // compute shortest paths
-        DijkstraUndirectedSP sp = new DijkstraUndirectedSP(G, s);
-
-
-        // print shortest path
-        for (int t = 0; t < G.V(); t++) {
-            if (sp.hasPathTo(t)) {
-                StdOut.printf("%d to %d (%.2f)  ", s, t, sp.distTo(t));
-                for (Edge e : sp.pathTo(t)) {
-                    StdOut.print(e + "   ");
-                }
-                StdOut.println();
-            }
-            else {
-                StdOut.printf("%d to %d         no path\n", s, t);
-            }
-        }
     }
 
 }

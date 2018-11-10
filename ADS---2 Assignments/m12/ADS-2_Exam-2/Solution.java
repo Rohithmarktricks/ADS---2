@@ -1,37 +1,40 @@
 import java.util.Scanner;
+/**
+* Class for solution.
+*/
 public class Solution {
-
-	public static void main(String[] args) {
+	/**
+	* Constructs the object.
+	*/
+	private Solution() {
+		// unused
+	}
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
 		// Take the Graph input here...
 		Scanner scan = new Scanner(System.in);
-		int cities = Integer.parseInt(scan.nextLine());
-		int reference = cities;
-		int routes = Integer.parseInt(scan.nextLine());
-		EdgeWeightedGraph eg = new EdgeWeightedGraph(cities);
-		Edge e;
-		while (cities > 0) {
-			String[] testcases = scan.nextLine().split(" ");
-			int source = Integer.parseInt(testcases[0]);
-			int destination = Integer.parseInt(testcases[1]);
-			int distance = Integer.parseInt(testcases[2]);
-			e = new Edge(source, destination, distance);
+		int vertices = Integer.parseInt(scan.nextLine());
+		int edges = Integer.parseInt(scan.nextLine());
+		int reference = edges;
+		EdgeWeightedGraph eg = new EdgeWeightedGraph(vertices);
+		while (reference > 0) {
+			String[] values = scan.nextLine().split(" ");
+			int source = Integer.parseInt(values[0]);
+			int destination = Integer.parseInt(values[1]);
+			int distance = Integer.parseInt(values[2]);
+			Edge e = new Edge(source, destination, distance);
 			eg.addEdge(e);
-			cities--;
+			reference--;
 		}
 		String caseToGo = scan.nextLine();
 		switch (caseToGo) {
 		case "Graph":
-			// int ver = eg.vertices();
-			// System.out.println(reference + " vertices " + routes + " edges");
-			// for (int v = 0; v < ver; v++) {
-			// 	System.out.print(v + ": ");
-			// 	for (Edge edge : eg.adj(v)) {
-			// 		System.out.print(edge + "  ");
-			// 	}
-			// 	System.out.println();
-			// }
 			System.out.println(eg);
 			break;
 
@@ -40,18 +43,16 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-			String[] pair = scan.nextLine().split(" ");
-			int home = Integer.parseInt(pair[0]);
-			SP l = new SP(eg, home);
-			int destination = Integer.parseInt(pair[1]);
-			if (l.distTo(destination) != 00.00) {
-				System.out.printf("%.1f\n", l.distTo(destination));
-			} else {
+			String[] places = scan.nextLine().split(" ");
+			int home = Integer.parseInt(places[0]);
+			Shortestpath sp = new Shortestpath(eg, home);
+			int destiny = Integer.parseInt(places[1]);
+			double result = sp.distTo(destiny);
+			if (result == Double.POSITIVE_INFINITY) {
 				System.out.println("No Path Found.");
+			} else {
+				System.out.println(result);
 			}
-
-			// System.out.println("No Path Found.");
-
 			break;
 
 		case "ViaPaths":
@@ -60,13 +61,26 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-			String[] fun = scan.nextLine().split(" ");
-			int so = Integer.parseInt(fun[0]);
-			int via = Integer.parseInt(fun[1]);
-			int destiny = Integer.parseInt(fun[2]);
-			// for (Edge edge : eg.adj(so)) {
-			// 	if ()
-			// 	}
+			String[] place = scan.nextLine().split(" ");
+			Shortestpath pathToplace1 = new Shortestpath(eg, Integer.parseInt(place[0]));
+			Shortestpath pathToplace2 = new Shortestpath(eg, Integer.parseInt(place[1]));
+			double distancePlace1 = pathToplace1.distTo(Integer.parseInt(place[1]));
+			double distancePlace2 = pathToplace2.distTo(Integer.parseInt(place[2]));
+			String str = place[0] + " ";
+			if (distancePlace1 == Double.POSITIVE_INFINITY || distancePlace2 == Double.POSITIVE_INFINITY) {
+				System.out.println("No Path Found.");
+			} else {
+				System.out.println(distancePlace1 + distancePlace2);
+				for (Edge edge1 : pathToplace1.pathTo(Integer.parseInt(place[1]))) {
+					str += edge1.either() + " ";
+				}
+				for (Edge edge2 : pathToplace2.pathTo(Integer.parseInt(place[2]))) {
+					int temp = edge2.either();
+					str += edge2.other(temp) + " ";
+				}
+				str += "/";
+				System.out.println(str);
+			}
 			break;
 
 		default:
