@@ -40,7 +40,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-2147483647
+Infinity
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -48,7 +48,7 @@ Expected Output:
 370.0
 
 Your Output: 
-370
+370.000000
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
