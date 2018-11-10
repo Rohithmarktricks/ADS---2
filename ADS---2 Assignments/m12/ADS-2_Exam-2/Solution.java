@@ -26,7 +26,7 @@ public class Solution {
 			for (int v = 0; v < ver; v++) {
 				System.out.print(v + ": ");
 				for (Edge edge : eg.adj[v]) {
-					System.out.print(edge + " " + edge.weight() + "  ");
+					System.out.print(edge + "  ");
 				}
 				System.out.print("\n");
 			}
