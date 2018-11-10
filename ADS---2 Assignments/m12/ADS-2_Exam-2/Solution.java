@@ -36,8 +36,12 @@ public class Solution {
 			int home = Integer.parseInt(pair[0]);
 			SP l = new SP(eg, home);
 			int destination = Integer.parseInt(pair[1]);
-			System.out.printf("%.1f\n", l.distTo(destination));
-			
+			if (l.distTo(destination) != 00.00) {
+				System.out.printf("%.1f\n", l.distTo(destination));
+			}else {
+				System.out.println("No Path Found.");
+			}
+
 			// System.out.println("No Path Found.");
 
 			break;

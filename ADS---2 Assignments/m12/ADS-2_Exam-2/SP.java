@@ -61,7 +61,12 @@ public class SP {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public double distTo(int v) {
-        validateVertex(v);
+        try {
+            validateVertex(v);
+        } catch (Exception e) {
+            return 00.00;
+
+        }
         return distTo[v];
     }
 
