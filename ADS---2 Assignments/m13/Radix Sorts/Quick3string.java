@@ -55,7 +55,7 @@ public final class Quick3string {
      *
      * @param a the array to be sorted
      */
-    public static void sort(String[] a) {
+    public static void sort(final String[] a) {
         // StdRandom.shuffle(a);
         sort(a, 0, a.length - 1, 0);
         assert isSorted(a);
@@ -69,7 +69,7 @@ public final class Quick3string {
      *
      * @return     { description_of_the_return_value }
      */
-    private static int charAt(String s, int d) {
+    private static int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
         if (d == s.length()) {
             return -1;
@@ -86,7 +86,7 @@ public final class Quick3string {
      * @param      hi    The higher
      * @param      d     { parameter_description }
      */
-    private static void sort(String[] a, int lo, int hi, int d) {
+    private static void sort(final String[] a, final int lo, final int hi, final int d) {
 
         // cutoff to insertion sort for small subarrays
         if (hi <= lo + CUTOFF) {
@@ -125,7 +125,7 @@ public final class Quick3string {
      * @param      hi    The higher
      * @param      d     { parameter_description }
      */
-    private static void insertion(String[] a, int lo, int hi, int d) {
+    private static void insertion(final String[] a, final int lo, final int hi, final int d) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
                 exch(a, j, j - 1);
@@ -140,7 +140,7 @@ public final class Quick3string {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    private static void exch(String[] a, int i, int j) {
+    private static void exch(final String[] a, final int i, final int j) {
         String temp = a[i];
         a[i] = a[j];
         a[j] = temp;

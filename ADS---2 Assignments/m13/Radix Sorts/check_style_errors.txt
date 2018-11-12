@@ -1,19 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:58:29: Parameter a should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:72:31: Parameter s should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:72:41: Parameter d should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:89:30: Parameter a should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:89:42: Parameter lo should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:89:50: Parameter hi should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:89:58: Parameter d should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:128:35: Parameter a should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:128:47: Parameter lo should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:128:55: Parameter hi should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:128:63: Parameter d should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:143:30: Parameter a should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:143:42: Parameter i should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:143:49: Parameter j should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:89: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:128: Line is longer than 80 characters (found 94). [LineLength]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 2 errors.
