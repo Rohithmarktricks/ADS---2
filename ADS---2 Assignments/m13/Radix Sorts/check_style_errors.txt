@@ -1,7 +1,4 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:89: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m13/Radix Sorts/Quick3string.java:128: Line is longer than 80 characters (found 94). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
