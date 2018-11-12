@@ -61,7 +61,14 @@ public final class Quick3string {
         assert isSorted(a);
     }
 
-    // return the dth character of s, -1 if d = length of s
+    /**
+     * Character At.
+     *
+     * @param      s     { parameter_description }
+     * @param      d     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private static int charAt(String s, int d) {
         assert d >= 0 && d <= s.length();
         if (d == s.length()) {
@@ -71,7 +78,14 @@ public final class Quick3string {
     }
 
 
-    // 3-way string quicksort a[lo..hi] starting at dth character
+    /**
+     * Sorting.
+     *
+     * @param      a     { parameter_description }
+     * @param      lo    The lower
+     * @param      hi    The higher
+     * @param      d     { parameter_description }
+     */
     private static void sort(String[] a, int lo, int hi, int d) {
 
         // cutoff to insertion sort for small subarrays
@@ -103,7 +117,14 @@ public final class Quick3string {
         sort(a, gt + 1, hi, d);
     }
 
-    // sort from a[lo] to a[hi], starting at the dth character
+    /**
+     * Insertion.
+     *
+     * @param      a     { parameter_description }
+     * @param      lo    The lower
+     * @param      hi    The higher
+     * @param      d     { parameter_description }
+     */
     private static void insertion(String[] a, int lo, int hi, int d) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
@@ -112,7 +133,13 @@ public final class Quick3string {
         }
     }
 
-    // exchange a[i] and a[j]
+    /**
+     * Exchange.
+     *
+     * @param      a     { parameter_description }
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     */
     private static void exch(String[] a, int i, int j) {
         String temp = a[i];
         a[i] = a[j];
@@ -126,8 +153,16 @@ public final class Quick3string {
     //    return v.substring(d).compareTo(w.substring(d)) < 0;
     // }
 
-    // is v less than w, starting at character d
-    private static boolean less(String v, String w, int d) {
+    /**
+     * checks if less.
+     *
+     * @param      v     { different elements. }
+     * @param      w     { different elements. }
+     * @param      d     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private static boolean less(final String v, final String w, final int d) {
         assert v.substring(0, d).equals(w.substring(0, d));
         for (int i = d; i < Math.min(v.length(), w.length()); i++) {
             if (v.charAt(i) < w.charAt(i)) {
@@ -139,8 +174,14 @@ public final class Quick3string {
         }
         return v.length() < w.length();
     }
-    // is the array sorted
-    private static boolean isSorted(String[] a) {
+    /**
+     * Determines if sorted.
+     *
+     * @param      a     { parameter_description }
+     *
+     * @return     True if sorted, False otherwise.
+     */
+    private static boolean isSorted(final String[] a) {
         for (int i = 1; i < a.length; i++) {
             if (a[i].compareTo(a[i - 1]) < 0) {
                 return false;
