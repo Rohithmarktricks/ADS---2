@@ -37,11 +37,18 @@
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
-public class Quick3string {
+public final class Quick3string {
+    /**
+     * Cutoff variable.
+     */
     private static final int CUTOFF =  15;   // cutoff to insertion sort
 
-    // do not instantiate
-    private Quick3string() { }
+    /**
+     * Constructs the object.
+     */
+    private Quick3string() {
+        //unused.
+    }
 
     /**
      * Rearranges the array of strings in ascending order.
