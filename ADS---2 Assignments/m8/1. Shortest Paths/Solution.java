@@ -3,7 +3,10 @@ import java.util.Scanner;
  * Class for solution.
  */
 public final class Solution {
-  String[] root;
+  /**
+   * Root array of strings.
+   */
+  private String[] root;
   /**
    * Constructs the object.
    */
@@ -11,7 +14,14 @@ public final class Solution {
     // unused
   }
 
-  private int getIndex(String str) {
+  /**
+   * Gets the index.
+   *
+   * @param      str   The string
+   *
+   * @return     The index.
+   */
+  private int getIndex(final String str) {
     int index = 0;
     for (int i = 0; i < root.length; i++) {
       if (str.equals(root[i])) {
@@ -20,7 +30,6 @@ public final class Solution {
     }
     return index;
   }
-
 
   /**
    * Main method.
