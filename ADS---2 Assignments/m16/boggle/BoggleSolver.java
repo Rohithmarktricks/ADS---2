@@ -41,8 +41,8 @@ public class BoggleSolver {
 			return;
 		}
 
-		if (word.length() >= 3 && validDictionary.contains(word)) {
-			validWords.add(word);
+		if (word.length() > 2 && validDictionary.contains(word)) {
+			set.add(word);
 		}
 
 		marked[row][col] = true;
@@ -54,7 +54,7 @@ public class BoggleSolver {
 				}
 
 				if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0) && (col + j < board.cols())) {
-					collectWords(board, row + i, col + j, marked, word, validWords);
+					collectWords(board, row + i, col + j, marked, word, set);
 				}
 			}
 		}
@@ -70,15 +70,12 @@ public class BoggleSolver {
 			case 0:
 			case 1:
 			case 2:
-				score = 0;
-				break;
+				return 0;
 			case 3:
 			case 4:
-				score = 1;
-				break;
+				return 1;
 			case 5:
-				score = 2;
-				break;
+				return 2;
 			case 6:
 				score = 3;
 				break;

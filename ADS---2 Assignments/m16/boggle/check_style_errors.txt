@@ -574,9 +574,8 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:26:71: Parameter marked should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:26:90: Parameter prefix should be final. [FinalParameters]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:26:105: Parameter set should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:44:38: '3' is a magic number. [MagicNumber]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:56: Line is longer than 80 characters (found 127). [LineLength]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:57: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:57: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:64: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:65: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:66:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
@@ -591,7 +590,7 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:86:41: '5' is a magic number. [MagicNumber]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:89:41: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 42 errors.
+Checkstyle ends with 41 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/Queue.java:9: Line has trailing spaces. [RegexpSingleline]
