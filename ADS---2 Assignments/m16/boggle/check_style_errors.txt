@@ -580,14 +580,14 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:66:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:66:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:66:28: Parameter word should be final. [FinalParameters]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:73:30: '3' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:74:30: '4' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:76:30: '5' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:78:30: '6' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:79:40: '3' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:80:30: '7' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:81:40: '5' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:83:40: '11' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:75:30: '3' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:76:30: '4' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:79:30: '5' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:82:30: '6' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:83:41: '3' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:85:30: '7' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:86:41: '5' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:89:41: '11' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 40 errors.
 Starting audit...
