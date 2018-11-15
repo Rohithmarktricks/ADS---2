@@ -30,6 +30,7 @@ public class Solution {
 			BoggleBoard board = new BoggleBoard("/Files/" + boardName);
 			int score = 0;
 			for (String word : solver.getAllValidWords(board)) {
+				// System.out.println(word);
 				score += solver.scoreOf(word);
 			}
 			StdOut.println("Score = " + score);

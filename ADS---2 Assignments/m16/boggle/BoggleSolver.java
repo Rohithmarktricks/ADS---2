@@ -79,7 +79,7 @@ public class BoggleSolver {
 			case 6:
 				return 3;
 			case 7:
-				return 4;
+				return 5;
 			default:
 				return 11;
 			}
