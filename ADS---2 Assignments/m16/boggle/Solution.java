@@ -38,7 +38,7 @@ public class Solution {
 
 		default:
 			try {
-				dictionaryName = StdIn.readLine();
+				dictionaryName = caseType;
 				in = new In("/Files/" + dictionaryName);
 				dictionary = in.readAllStrings();
 				solver = new BoggleSolver(dictionary);

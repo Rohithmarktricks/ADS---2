@@ -1,4 +1,7 @@
 import java.util.*;
+// import edu.princeton.ex.algs4.Queue;
+// import edu.princeton.ex.algs4.StdIn;
+// import edu.princeton.ex.algs4.StdOut;
 /**
  * Class for boggle solver.
  */
@@ -30,12 +33,14 @@ public class BoggleSolver {
 	 * @return     All valid words.
 	 */
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
-		if (board == null) throw new IllegalArgumentException("board is null");
 		Set<String> validWords = new HashSet<String>();
-		boolean[][] markedindices = new boolean[board.rows()][board.cols()];
+		if (board == null) {
+			throw new NullPointerException("board is null");
+		}
 		String initialStr = "";
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
+				boolean[][] markedindices = new boolean[board.rows()][board.cols()];
 				helperWordsFinder(board, i, j, markedindices, initialStr, validWords);
 			}
 		}
