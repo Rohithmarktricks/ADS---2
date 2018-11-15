@@ -548,7 +548,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 27 errors.
 Starting audit...
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
@@ -585,12 +584,12 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:76:30: '4' is a magic number. [MagicNumber]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:79:30: '5' is a magic number. [MagicNumber]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:82:30: '6' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:83:41: '3' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:84:40: '3' is a magic number. [MagicNumber]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:85:30: '7' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:86:41: '5' is a magic number. [MagicNumber]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:89:41: '11' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:87:40: '4' is a magic number. [MagicNumber]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:90:40: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 41 errors.
+Checkstyle ends with 40 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/Queue.java:9: Line has trailing spaces. [RegexpSingleline]

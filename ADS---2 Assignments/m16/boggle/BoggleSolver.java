@@ -70,26 +70,27 @@ public class BoggleSolver {
 			case 0:
 			case 1:
 			case 2:
+				System.out.println("hello");
 				return 0;
 			case 3:
 			case 4:
+				System.out.println("hi");
 				return 1;
 			case 5:
+				System.out.println("5");
 				return 2;
 			case 6:
-				score = 3;
-				break;
+				System.out.println("6");
+				return 3;
 			case 7:
-				score = 5;
-				break;
+				System.out.println("7");
+				return 4;
 			default:
-				score = 11;
-				break;
+				System.out.println("8");
+				return 11;
 			}
 		} else {
 			return 0;
-
 		}
-		return score;
 	}
 }
