@@ -1,9 +1,18 @@
 import java.util.*;
+/**
+ * Class for boggle solver.
+ */
 public class BoggleSolver {
 	private TrieSET validDictionary;
 	// public boolean[][] markedindices;
 	// Initializes the data structure using the given array of strings as the dictionary.
 	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
+
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      dictionary  The dictionary
+	 */
 	public BoggleSolver(String[] dictionary) {
 		this.validDictionary = new TrieSET();
 		for (String str : dictionary) {
@@ -12,7 +21,16 @@ public class BoggleSolver {
 	}
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
+
+	/**
+	 * Gets all valid words.
+	 *
+	 * @param      board  The board
+	 *
+	 * @return     All valid words.
+	 */
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
+		if (board == null) throw new IllegalArgumentException("board is null");
 		Set<String> validWords = new HashSet<String>();
 		boolean[][] markedindices = new boolean[board.rows()][board.cols()];
 		String initialStr = "";
