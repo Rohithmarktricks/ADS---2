@@ -34,7 +34,7 @@ import java.util.Iterator;
  *  @author Kevin Wayne
  */
 public class TrieSET implements Iterable<String> {
-    private static final int R = 256;        // extended ASCII
+    private static final int R = 26;        // extended ASCII
 
     private Node root;      // root of trie
     private int N;          // number of keys in trie
