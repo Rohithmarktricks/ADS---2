@@ -53,7 +53,7 @@ public class Solution {
 				}
 				StdOut.println("Score = " + score);
 			} catch (Exception ex) {
-				System.out.println("board is null");
+				System.out.println(ex.getMessage());
 			}
 			break;
 		}
