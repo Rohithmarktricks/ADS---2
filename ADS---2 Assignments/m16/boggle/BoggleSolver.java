@@ -1,6 +1,7 @@
 import java.util.*;
 public class BoggleSolver {
 	private TrieSET validDictionary;
+	Set<String> validWords = new HashSet<String>();
 	// public boolean[][] markedindices;
 	// Initializes the data structure using the given array of strings as the dictionary.
 	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
@@ -13,7 +14,6 @@ public class BoggleSolver {
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
-		Set<String> validWords = new HashSet<String>();
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
 				boolean[][] markedindices = new boolean[board.rows()][board.cols()];
@@ -42,7 +42,7 @@ public class BoggleSolver {
 		}
 
 		if (word.length() >= 3 && validDictionary.contains(word)) {
-			set.add(word);
+			validWords.add(word);
 		}
 
 		marked[row][col] = true;
@@ -54,7 +54,7 @@ public class BoggleSolver {
 				}
 
 				if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0) && (col + j < board.cols())) {
-					collectWords(board, row + i, col + j, marked, word, set);
+					collectWords(board, row + i, col + j, marked, word, validWords);
 				}
 			}
 		}
