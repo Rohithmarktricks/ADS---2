@@ -553,8 +553,6 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:3:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:4:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:4:28: Variable 'markedindices' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:5: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:6: Line is longer than 80 characters (found 104). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:7:9: Missing a Javadoc comment. [JavadocMethod]
@@ -563,6 +561,7 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:15:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'getAllValidWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'getAllValidWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:15:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:15:50: Parameter board should be final. [FinalParameters]
+[ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:19: Line is longer than 80 characters (found 100). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:20: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:26: Line is longer than 80 characters (found 122). [LineLength]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:26:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'collectWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'collectWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
@@ -590,7 +589,7 @@ Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:81:40: '5' is a magic number. [MagicNumber]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/BoggleSolver.java:83:40: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 41 errors.
+Checkstyle ends with 40 errors.
 Starting audit...
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/Queue.java:5: Line has trailing spaces. [RegexpSingleline]
 [ERROR] /home/rohith/Documents/ADS---2/ADS---2 Assignments/m16/boggle/Queue.java:9: Line has trailing spaces. [RegexpSingleline]
