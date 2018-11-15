@@ -33,7 +33,11 @@ public class Solution {
 				// System.out.println(word);
 				score += solver.scoreOf(word);
 			}
-			StdOut.println("Score = " + score);
+			if (score >= 0) {
+				StdOut.println("Score = " + score);
+			} else {
+				StdOut.println("board is null");
+			}
 			break;
 
 		default:
@@ -49,7 +53,7 @@ public class Solution {
 				}
 				StdOut.println("Score = " + score);
 			} catch (Exception ex) {
-				System.out.println(ex.getMessage());
+				System.out.println("board is null");
 			}
 			break;
 		}
