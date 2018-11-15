@@ -71,7 +71,7 @@ public class BoggleSolver {
 				}
 			}
 		}
-		// marked[row][col] = false;
+		marked[row][col] = false;
 	}
 
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
