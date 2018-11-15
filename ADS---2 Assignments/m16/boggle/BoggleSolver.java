@@ -23,6 +23,7 @@ public class BoggleSolver {
 		}
 		return validWords;
 	}
+
 	//This is a helper function to store all the possible and valid words from the given 4x4 BoggleBoard.
 	// This helperWordsFinder will locate all the characters in the BoggleBoard that are adjacent to the
 	// character that was passed to this function from getAllValidWords function.
