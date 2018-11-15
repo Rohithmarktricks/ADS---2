@@ -20,7 +20,7 @@ public class BoggleSolver {
 				collectWords(board, i, j, markedindices, "", validWords);
 			}
 		}
-		return new Bag<String>();
+		return validWords;
 	}
 
 	public void collectWords(BoggleBoard board, int row, int col, boolean[][]marked, String prefix, Set<String> set) {
