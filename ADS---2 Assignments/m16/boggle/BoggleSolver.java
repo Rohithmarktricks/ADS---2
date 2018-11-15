@@ -15,15 +15,28 @@ public class BoggleSolver {
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
 		Set<String> validWords = new HashSet<String>();
 		boolean[][] markedindices = new boolean[board.rows()][board.cols()];
+		String initialStr = "";
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
-				collectWords(board, i, j, markedindices, "", validWords);
+				helperWordsFinder(board, i, j, markedindices, initialStr, validWords);
 			}
 		}
 		return validWords;
 	}
-
-	public void collectWords(BoggleBoard board, int row, int col, boolean[][]marked, String prefix, Set<String> set) {
+	//This is a helper function to store all the possible and valid words from the given 4x4 BoggleBoard.
+	// This helperWordsFinder will locate all the characters in the BoggleBoard that are adjacent to the
+	// character that was passed to this function from getAllValidWords function.
+	/**
+	 * Collect Words.
+	 *
+	 * @param      board   The board
+	 * @param      row     The row
+	 * @param      col     The col
+	 * @param      marked  The marked
+	 * @param      prefix  The prefix
+	 * @param      set     The set
+	 */
+	public void helperWordsFinder(BoggleBoard board, int row, int col, boolean[][]marked, String prefix, Set<String> set) {
 		if (marked[row][col]) {
 			return;
 		}
@@ -54,17 +67,16 @@ public class BoggleSolver {
 				}
 
 				if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0) && (col + j < board.cols())) {
-					collectWords(board, row + i, col + j, marked, word, set);
+					helperWordsFinder(board, row + i, col + j, marked, word, set);
 				}
 			}
 		}
-		marked[row][col] = false;
+		// marked[row][col] = false;
 	}
 
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
 	// (You can assume the word contains only the uppercase letters A through Z.)
 	public int scoreOf(String word) {
-		int score = 0;
 		if (validDictionary.contains(word)) {
 			switch (word.length()) {
 			case 0:
