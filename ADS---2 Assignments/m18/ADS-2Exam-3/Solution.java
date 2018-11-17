@@ -89,6 +89,7 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[] tempKeys = toReadFile(file);
 		for (String str : tempKeys) {
+			str = str.toLowerCase();
 			if (!st.contains(str)) {
 				st.put(str, 1);
 			} else {
@@ -119,13 +120,19 @@ class T9 {
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
-		// your code goes here
+		// String[] sample = t9Signature.split("");
+		// int len = sample.length();
+		// String str = "";
+		// for (int i = 0; i < len; i++) {
+		// 	char y = t9Signature.charAt(i);
+
+		// }
 		return null;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
-		// your code goes here
+
 		return null;
 	}
 
