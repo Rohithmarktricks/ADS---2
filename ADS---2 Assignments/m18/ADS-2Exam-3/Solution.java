@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Solution {
 
@@ -119,21 +120,58 @@ class T9 {
 		return dict.keysWithPrefix(prefix);
 	}
 
+	public char[] mapper(String inNum) {
+		int num = Integer.parseInt(inNum);
+		if (num == 2) {
+			char[] guess = {'a', 'b', 'c'};
+			return guess;
+		} else if (num == 3) {
+			char[] guess = {'d', 'e', 'f'};
+			return guess;
+		} else if (num == 4) {
+			char[] guess = {'g', 'h', 'i'};
+			return guess;
+		} else if (num == 5) {
+			char[] guess = {'j', 'k', 'l'};
+			return guess;
+		} else if (num == 6) {
+			char[] guess = {'m', 'n', 'o'};
+			return guess;
+		} else if (num == 7) {
+			char[] guess = {'p', 'q', 'r', 's'};
+			return guess;
+		} else if (num == 8) {
+			char[] guess = {'t', 'u', 'v'};
+			return guess;
+		}
+		char[] guess = {'w', 'x', 'y', 'z'};
+		return guess;
+	}
 	public Iterable<String> potentialWords(String t9Signature) {
-		// String[] sample = t9Signature.split("");
-		// int len = sample.length();
-		// String str = "";
-		// for (int i = 0; i < len; i++) {
-		// 	char y = t9Signature.charAt(i);
+		String[] sample = t9Signature.split("");
+		int len = t9Signature.length();
+		String str = "";
+		for (int i = 0; i < len; i++) {
+			String reference = sample[i];
 
-		// }
+		}
 		return null;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
-
-		return null;
+		ArrayList<String> list = new ArrayList<>();
+		for (String str : words) {
+			list.add(str);
+		}
+		Collections.sort(list, Collections.reverseOrder());
+		// Collections.sort(list, (Integer)dict.get());
+		// ArrayList<String> finalList = new ArrayList<>(k);
+		// for (Integer in : list) {
+		// 	finalList.add()
+		// }
+		return list;
+		// return null;
 	}
 
 	// final output
