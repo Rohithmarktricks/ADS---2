@@ -88,8 +88,8 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[] tempKeys = toReadFile(file);
+		int freq = 0;
 		for (String str : tempKeys) {
-			int freq = 0;
 			for (int i = 0; i < tempKeys.length; i++) {
 				if (str == tempKeys[i]) {
 					freq += 1;
@@ -97,6 +97,7 @@ public class Solution {
 			}
 			if (!st.contains(str)) {
 				st.put(str, freq);
+				freq = 0;
 			}
 		}
 		return st;
