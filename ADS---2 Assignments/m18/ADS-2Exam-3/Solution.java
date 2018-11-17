@@ -89,10 +89,10 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[] tempKeys = toReadFile(file);
 		for (String str : tempKeys) {
-			if (st.get(str) == null) {
-				st.put(str, 1);
-			} else {
+			if (st.get(str) != null) {
 				st.put(str, st.get(str) + 1);
+			} else {
+				st.put(str, 1);
 			}
 		}
 
