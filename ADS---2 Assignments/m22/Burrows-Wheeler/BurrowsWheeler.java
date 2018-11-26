@@ -1,62 +1,59 @@
+import edu.princeton.cs.algs4.BinaryStdIn;
+import edu.princeton.cs.algs4.BinaryStdOut;
+
+
 public class BurrowsWheeler {
-
-
+	private static final int R = 256; // Radix of a byte.
+	/**
+	 * apply Burrows-Wheeler encoding, reading from standard input and writing to standard output
+	 */
 	public static void transform() {
 		String s = BinaryStdIn.readString();
 		CircularSuffixArray csa = new CircularSuffixArray(s);
-		char[] out = new char[s.length()];
-		int id = 0;
-		for (int i = 0; i < s.length(); i++) {
-			int k = csa.index(i);
-			if (k == 0) {
-				id = i;
-				out[i] = s.charAt(s.length() - 1);
-			} else {
-				out[i] = s.charAt(k - 1);
-			}
+		int first = 0;
+		while (first < csa.length() && csa.index(first) != 0) {
+			first++;
 		}
-		BinaryStdOut.write(id);
-		for (int i = 0; i < s.length(); i++) {
-			BinaryStdOut.write(out[i]);
+		BinaryStdOut.write(first);
+		for (int i = 0; i < csa.length(); i++) {
+			BinaryStdOut.write(s.charAt((csa.index(i) + s.length() - 1) % s.length()));
 		}
-		BinaryStdOut.flush();
-	}
+		BinaryStdOut.close();
 
+	}
+	/**
+	 * apply Burrows-Wheeler decoding, reading from standard input and writing to standard output
+	 */
 	public static void inverseTransform() {
-		int id = BinaryStdIn.readInt();
-		String s = BinaryStdIn.readString();
-		int n = s.length();
-		char[] col1 = s.toCharArray();
-		int[] next = new int[n];
-
-		// counting, O(n)
-		int[] counts = new int[256];
-		Arrays.fill(counts, 0);
+		int first = BinaryStdIn.readInt();
+		String t = BinaryStdIn.readString();
+		int n = t.length();
+		int[] count = new int[R + 1], next = new int[n];
 		for (int i = 0; i < n; i++)
-			counts[s.charAt(i)]++;
-		// scan, O(256)
-		for (int i = 1; i < 256; i++)
-			counts[i] += counts[i - 1];
-		// sort col1 and generate next, O(n)
-		for (int i = n - 1; i >= 0; i--) {
-			char c = s.charAt(i);
-			int j = --counts[c];
-			next[j] = i;
-			col1[j] = c;
-		}
-
-		// construct O(n)
-		for (int i = 0; i < n; id = next[id], i++)
-			BinaryStdOut.write(col1[id]);
-		BinaryStdOut.flush();
-
+			count[t.charAt(i) + 1]++;
+		for (int i = 1; i < R + 1; i++)
+			count[i] += count[i - 1];
+		for (int i = 0; i < n; i++)
+			next[count[t.charAt(i)]++] = i;
+		for (int i = next[first], c = 0; c < n; i = next[i], c++)
+			BinaryStdOut.write(t.charAt(i));
+		BinaryStdOut.close();
 	}
-
-	// if args[0] is '-', apply Burrows-Wheeler encoding
-	// if args[0] is '+', apply Burrows-Wheeler decoding
+	/**
+	* if args[0] is '-', apply Burrows-Wheeler encoding. if args[0] is '+', apply Burrows-Wheeler decoding
+	*
+	* @param args
+	*/
 	public static void main(String[] args) {
-		if      (args[0].equals("-")) encode();
-		else if (args[0].equals("+")) decode();
-		else throw new IllegalArgumentException("Illegal command line argument");
+		if (args.length != 1)
+			throw new IllegalArgumentException("Expected + or -\n");
+		else if (args[0].equals("+"))
+			inverseTransform();
+		else if (args[0].equals("-"))
+			transform();
+		else {
+			String msg = "Unknown argument: " + args[0] + "\n";
+			throw new IllegalArgumentException(msg);
+		}
 	}
 }

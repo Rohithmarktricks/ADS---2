@@ -1,60 +1,65 @@
+import edu.princeton.cs.algs4.BinaryStdIn;
+import edu.princeton.cs.algs4.BinaryStdOut;
 public class MoveToFront {
-
-	private static char[] initMtf() {
-		char[] mtf = new char[256];
-		for (char c = 0; c < 256; c++)
-			mtf[c] = c;
-		return mtf;
-	}
-
-	private static char[] read() {
-		String s = BinaryStdIn.readString();
-		return s.toCharArray();
-	}
-
-	// apply move-to-front encoding, reading from standard input and writing to standard output
+	private static final int R = 256; // extended ASCII
+	/**
+	* apply move-to-front encoding, reading from standard input and writing to standard output
+	*/
 	public static void encode() {
-		char[] in = read();
-		char[] mtf = initMtf();
-		for (int i = 0; i < in.length; i++) {
-			char c = 0;
-			for (char k = 0; k < 256; k++) {
-				char tmp = mtf[k];
-				mtf[k] = c; c = tmp;
-				if (c == in[i]) {
-					mtf[0] = c;
-					BinaryStdOut.write(k);
-					break;
-				}
+		char[] chars = createArray();
+		while (!BinaryStdIn.isEmpty()) {
+			char ch = BinaryStdIn.readChar();
+			char tmpin, count, tmpout;
+			for (count = 0, tmpout = chars[0]; ch != chars[count]; count++) {
+				tmpin = chars[count];
+				chars[count] = tmpout;
+				tmpout = tmpin;
 			}
+			chars[count] = tmpout;
+			BinaryStdOut.write(count);
+			chars[0] = ch;
 		}
-		BinaryStdOut.flush();
+		BinaryStdOut.close();
 	}
-
-	// apply move-to-front decoding, reading from standard input and writing to standard output
+	/**
+	 * apply move-to-front decoding, reading from standard input and writing to standard output
+	 */
 	public static void decode() {
-		char[] in = read();
-		char[] mtf = initMtf();
-		for (int i = 0; i < in.length; i++) {
-			char c = 0;
-			for (char k = 0; k < 256; k++) {
-				char tmp = mtf[k];
-				mtf[k] = c; c = tmp;
-				if (k == in[i]) {
-					mtf[0] = c;
-					BinaryStdOut.write(c);
-					break;
-				}
+		char[] chars = createArray();
+		while (!BinaryStdIn.isEmpty()) {
+			char count = BinaryStdIn.readChar();
+			BinaryStdOut.write(chars[count], 8);
+			char index = chars[count];
+			while (count > 0) {
+				chars[count] = chars[--count];
 			}
+			chars[0] = index;
 		}
-		BinaryStdOut.flush();
+		BinaryStdOut.close();
 	}
-
-	// if args[0] is '-', apply move-to-front encoding
-	// if args[0] is '+', apply move-to-front decoding
+	private static char[] createArray() {
+		char[] chars = new char[R];
+		for (char i = 0; i < R; i++) {
+			chars[i] = i;
+		}
+		return chars;
+	}
+	/**
+	 * if args[0] is '-', apply move-to-front encoding. if args[0] is '+', apply move-to-front decoding
+	 *
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		if      (args[0].equals("-")) encode();
-		else if (args[0].equals("+")) decode();
-		else throw new IllegalArgumentException("Illegal command line argument");
+		if (args.length != 1) {
+			throw new IllegalArgumentException("Expected + or -\n");
+		}
+		String first = args[0];
+		if (first.equals("+")) {
+			decode();
+		} else if (first.equals("-")) {
+			encode();
+		} else {
+			throw new IllegalArgumentException("Unknown argument: " + first + "\n");
+		}
 	}
 }
