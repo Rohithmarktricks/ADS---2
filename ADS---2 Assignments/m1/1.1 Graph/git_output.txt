@@ -1,0 +1,8 @@
+[master afefede] "ads2_m1_a1_1: 7/8 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 6 files changed, 128 insertions(+), 116 deletions(-)
+ rewrite ADS---2 Assignments/m1/1.1 Graph/Bag.java (61%)
+ rewrite ADS---2 Assignments/m1/1.1 Graph/check_style_errors.txt (98%)
+ rewrite ADS---2 Assignments/m1/1.1 Graph/result/score.json (100%)
+To https://github.com/Rohithmarktricks/ADS---2.git
+   8cad06d..afefede  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.

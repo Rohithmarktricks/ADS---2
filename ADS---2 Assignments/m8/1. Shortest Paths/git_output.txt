@@ -1,0 +1,60 @@
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   ../../1. Shortest Paths/git_output.txt
+	modified:   ../../1. Shortest Paths/result/score.json
+	modified:   ../../m1/1.1 Graph/git_output.txt
+	modified:   ../../m1/1.1 Graph/result/score.json
+	modified:   ../../m10/Seam Carving/git_output.txt
+	modified:   ../../m12/ADS-2_Exam-2/git_output.txt
+	modified:   ../../m12/ADS-2_Exam-2/result/score.json
+	modified:   ../../m13/Radix Sorts/git_output.txt
+	modified:   ../../m13/Radix Sorts/result/score.json
+	modified:   ../../m14/Assignment-1/git_output.txt
+	modified:   ../../m14/Assignment-1/result/score.json
+	modified:   ../../m2/2.1 CC_Percolation/git_output.txt
+	modified:   ../../m2/2.1 CC_Percolation/result/score.json
+	modified:   ../../m3/3.1 Directed Cycle/Solution.java
+	modified:   ../../m3/3.1 Directed Cycle/git_output.txt
+	modified:   ../../m3/3.1 Directed Cycle/result/score.json
+	modified:   ../../m6/ADS-2Week-1/git_output.txt
+	modified:   ../../m6/ADS-2Week-1/result/score.json
+	modified:   ../../m7/1. MST/git_output.txt
+	modified:   ../../m7/1. MST/result/score.json
+	modified:   ../../percolation_class/2.1 CC_Percolation/git_output.txt
+
+Untracked files:
+	../../../3.1 Directed Cycle/
+	../../../3.2 Bipartite/
+	../../Bag.java
+	../../m10/Seam Carving.zip
+	../../m10/Seam Carving/md5/score.txt
+	../../m10/Seam Carving/result/
+	../../m12/ADS-2_Exam-2.zip
+	../../m12/ADS-2_Exam-2/DijkstraSP.java
+	../../m12/ADS-2_Exam-2/DirectedEdge.java
+	../../m12/ADS-2_Exam-2/EdgeWeightedGraph.java
+	../../m13/Radix Sorts.zip
+	../../m14/Assignment-1.zip
+	../../m2/2.1 CC_Percolation.zip
+	../../m3/3.1 Directed Cycle.zip
+	../../m3/3.2 Bipartite.zip
+	../../m3/3.2 Bipartite/
+	../../m4/
+	../../m7/1. MST.zip
+	../1. Shortest Paths.zip
+	../../percolation_class/2.1 CC_Percolation.zip
+	../../../ADS---2 Practice/
+	../../../Codes/Connected components/
+	../../../Codes/DepthFirstOrder.java
+	../../../Codes/DirectedCycle.java
+	../../../Codes/Graph/AdjMatrixGraph.java
+	../../../Codes/Topological.java
+	../../../complexity Classes/
+
+no changes added to commit
+To https://github.com/Rohithmarktricks/ADS---2.git
+   f5ae498..cf5c5c7  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.

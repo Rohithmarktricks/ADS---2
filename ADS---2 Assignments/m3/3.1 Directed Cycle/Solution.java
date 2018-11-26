@@ -35,9 +35,8 @@ class Graph {
 
 
 		for (int ind = 0; ind < ver; ind++) {
-			if (isCyclicUtil(ind, visited, recStack)) {
+			if (isCyclicUtil(ind, visited, recStack))
 				return true;
-			}
 		}
 		return false;
 	}

@@ -1,0 +1,7 @@
+[master c63feb4] "ads2_m7_a1_1: 6/6 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 1/1 "
+ 4 files changed, 37 insertions(+), 41 deletions(-)
+ rewrite ADS---2 Assignments/m7/1. MST/Solution.java (93%)
+ rewrite ADS---2 Assignments/m7/1. MST/result/score.json (100%)
+To https://github.com/Rohithmarktricks/ADS---2.git
+   e127cc7..c63feb4  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
