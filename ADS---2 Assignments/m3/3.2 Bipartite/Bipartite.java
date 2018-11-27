@@ -31,11 +31,11 @@ public class Bipartite {
      */
     public Bipartite(final Graph graph) {
         isBipartite = true;
-        color  = new boolean[graph.V()];
-        marked = new boolean[graph.V()];
-        edgeTo = new int[graph.V()];
+        color  = new boolean[graph.vertices()];
+        marked = new boolean[graph.vertices()];
+        edgeTo = new int[graph.vertices()];
 
-        for (int v = 0; v < graph.V(); v++) {
+        for (int v = 0; v < graph.vertices(); v++) {
             if (!marked[v]) {
                 dfs(graph, v);
             }
