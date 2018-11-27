@@ -16,6 +16,7 @@ Expected Output:
 12: 10 
 13: 6 
 14: 13
+
 Your Output: 
 15 vertices, 14 edges 
 0: 
@@ -34,14 +35,17 @@ Your Output:
 13: 6 
 14: 13
 ----------------------------------------
+
 ########## Testcase 1: Passed ##########
 Expected Output: 
 distance = 7, ancestor = entity
 distance = 10, ancestor = entity
+
 Your Output: 
 distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 ----------------------------------------
+
 ########## Testcase 2: Passed ##########
 Expected Output: 
 distance = 7, ancestor = macromolecule supermolecule
@@ -50,6 +54,7 @@ distance = 9, ancestor = macromolecule supermolecule
 distance = 8, ancestor = macromolecule supermolecule
 distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
+
 Your Output: 
 distance = 7, ancestor = macromolecule supermolecule
 distance = 7, ancestor = macromolecule supermolecule
@@ -58,16 +63,19 @@ distance = 8, ancestor = macromolecule supermolecule
 distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 ----------------------------------------
+
 ########## Testcase 3: Passed ##########
 Expected Output: 
 distance = 3, ancestor = wax
 distance = 13, ancestor = thing
 distance = 2, ancestor = wax
+
 Your Output: 
 distance = 3, ancestor = wax
 distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 ----------------------------------------
+
 ########## Testcase 4: Passed ##########
 Expected Output: 
 distance = 0, ancestor = b
@@ -75,6 +83,7 @@ distance = 0, ancestor = c
 distance = 0, ancestor = d
 distance = 0, ancestor = e
 distance = 0, ancestor = f
+
 Your Output: 
 distance = 0, ancestor = b
 distance = 0, ancestor = c
@@ -82,6 +91,7 @@ distance = 0, ancestor = d
 distance = 0, ancestor = e
 distance = 0, ancestor = f
 ----------------------------------------
+
 ########## Testcase 5: Passed ##########
 Expected Output: 
 distance = 1, ancestor = b
@@ -94,6 +104,7 @@ distance = 3, ancestor = c
 distance = 3, ancestor = i
 distance = 2, ancestor = j
 distance = 1, ancestor = k
+
 Your Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
@@ -106,6 +117,7 @@ distance = 3, ancestor = i
 distance = 2, ancestor = j
 distance = 1, ancestor = k
 ----------------------------------------
+
 ########## Testcase 6: Passed ##########
 Expected Output: 
 distance = 1, ancestor = b
@@ -115,6 +127,7 @@ distance = 5, ancestor = h
 distance = 4, ancestor = h
 distance = 3, ancestor = h
 distance = 1, ancestor = h
+
 Your Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
@@ -124,6 +137,7 @@ distance = 4, ancestor = h
 distance = 3, ancestor = h
 distance = 1, ancestor = h
 ----------------------------------------
+
 ########## Testcase 7: Passed ##########
 Expected Output: 
 distance = 1, ancestor = b
@@ -136,6 +150,7 @@ distance = 3, ancestor = f
 distance = 3, ancestor = f
 distance = 3, ancestor = f
 distance = 4, ancestor = f
+
 Your Output: 
 distance = 1, ancestor = b
 distance = 1, ancestor = c
@@ -148,6 +163,7 @@ distance = 3, ancestor = f
 distance = 3, ancestor = f
 distance = 4, ancestor = f
 ----------------------------------------
+
 ########## Testcase 8: Passed ##########
 Expected Output: 
 8 vertices, 17 edges 
@@ -159,6 +175,7 @@ Expected Output:
 5: 7 
 6: 7 
 7:
+
 Your Output: 
 8 vertices, 17 edges 
 0: 7 6 5 4 3 1 
@@ -170,30 +187,39 @@ Your Output:
 6: 7 
 7:
 ----------------------------------------
+
 ########## Testcase 9: Passed ##########
 Expected Output: 
 Multiple roots
+
 Your Output: 
 Multiple roots
 ----------------------------------------
+
 ########## Testcase 10: Passed ##########
 Expected Output: 
 Multiple roots
+
 Your Output: 
 Multiple roots
 ----------------------------------------
+
 ########## Testcase 11: Passed ##########
 Expected Output: 
 IllegalArgumentException
+
 Your Output: 
 IllegalArgumentException
 ----------------------------------------
+
 ########## Testcase 12: Passed ##########
 Expected Output: 
 IllegalArgumentException
+
 Your Output: 
 IllegalArgumentException
 ----------------------------------------
+
 ########## Testcase 13: Passed ##########
 Expected Output: 
 distance = 11, ancestor = whole unit
@@ -213,6 +239,7 @@ distance = 13, ancestor = abstraction abstract_entity
 distance = 12, ancestor = abstraction abstract_entity
 distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
+
 Your Output: 
 distance = 11, ancestor = whole unit
 distance = 8, ancestor = organism being
@@ -232,9 +259,12 @@ distance = 12, ancestor = abstraction abstract_entity
 distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 ----------------------------------------
+
 ########## Testcase 14: Passed ##########
 Expected Output: 
 Cycle detected
+
 Your Output: 
 Cycle detected
 ----------------------------------------
+
