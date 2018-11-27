@@ -1,0 +1,50 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+Graph is bipartite
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at Bipartite.<init>(Bipartite.java:34)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+Graph is bipartite
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at Bipartite.<init>(Bipartite.java:34)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+Graph is bipartite
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at Bipartite.<init>(Bipartite.java:34)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+Graph is not a bipartite
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at Bipartite.<init>(Bipartite.java:34)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+Graph is not a bipartite
+
+Your Output: 
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.V()I
+	at Bipartite.<init>(Bipartite.java:34)
+	at Solution.main(Solution.java:29)
+----------------------------------------
+
